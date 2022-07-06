@@ -1,0 +1,35 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang ="en" and dir = "Itr">
+    <!--boxicons-->
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+<head>
+    <meta charset="utf-8">
+    <title> Athletes Registration </title>
+    <link rel="stylesheet" href="{% static 'initial/css/loginstyle.css' %}">
+</head>
+
+<body>
+<form class = "box" id="form" action = "login.html" method="post" >
+
+    <h1> Register </h1>
+
+    <input type="text" name ="" placeholder="Email ID" id="email" />
+   
+    <input type="text" name ="" placeholder="Username" id="username" />
+   
+    <input type="password" name ="" placeholder="Password" id="password" />  
+   
+    <input type="password" name ="" placeholder="Password Again" id="password2" />
+   
+    <input type="submit" value = "Register" />   
+    <label>
+        <p>Already have an account?<a href="{%url 'webpage6'%}">Login</a></p>
+    </label>
+</form>
+<script src ="registerValidation.js"></script>
+
+
+</body>
+
+</html>

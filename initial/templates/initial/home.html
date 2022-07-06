@@ -1,0 +1,76 @@
+{% load static %}
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="{% static 'initial/css/style.css' %}">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+    <script src="script.js"></script>
+</head>
+<body >
+  <div class="slider">
+    <div class="demoo">
+           
+        <a href="" target="blank" class="active" > HOME </a> 
+        <a href="{%url 'webpage7'%}" > MEN</a> 
+        <a href="{%url 'webpage11'%}" >WOMEN </a>
+        <a href="{%url 'webpage3'%}"> ADMIN</a>
+        <a href="{%url 'webpage2'%}" > ABOUT US</a> 
+        <a href="{%url 'webpage6'%}"  target="blank">LOG OUT </a> 
+
+        <div class="search-container">
+            <form action="/action_page.php">
+              <input type="text" placeholder="Search.." name="search">
+              <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+          </div>
+          </div>
+         <!--menuicon-->
+
+         <div class="dropdown">
+          <div onclick="myFunction()" class="dropbtn">
+              <div class="bar"></div>
+              <div  class="bar"></div>
+              <div  class="bar"></div>
+              <div  class="bar"></div>
+          </div>
+          <div id="myDropdown" class="dropdown-content">
+              <a href="#home">Home</a>
+              <a href="{%url 'webpage8'%}">Men</a>
+              <a href="{%url 'webpage12'%}">Women</a>
+              <a href="{%url 'webpage3'%}">Admin</a>
+              <a href="{%url 'webpage2'%}">About Us</a>
+              <a href="{%url 'webpage6'%}">Log out</a>
+  
+            </div>
+      </div> 
+       
+
+        <div>
+          <h1><span>S</span>P<span>O</span>R<span>T</span>S<br><span>A</span>C<span>C</span>E<span>S</span>S<span>O</span>R<span>I</span>E<span>S</span> </h1>
+          
+        </div>
+    
+  
+  </div>
+  <div class="footer">
+    <div class="icons">
+        <img class="icon" src="images/facebook.png" width="40px" alt="">
+        <img class="icon" src="images/twiter.jpg" width="40px" alt="">
+         <img class="icon" src="images/instagram.jpg"  width="40px" alt="">
+         <img class="icon" src="images/youtube.jpg"  width="40px" alt="">
+         <img  class="icon" src="images/Wifi-1-icon.png"  width="40px" alt="">
+         <p>contact us </p>
+
+</div>
+</div>
+</body>
+</html>
